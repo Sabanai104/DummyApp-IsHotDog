@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SeaFoodApp: App {
+    let factoryView = Factory().make()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            factoryView
         }
     }
 }

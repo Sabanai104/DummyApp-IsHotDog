@@ -6,20 +6,56 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		E67C0EAB2DB601E200512DFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E67C0E662DB5CE6300512DFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E67C0E6D2DB5CE6300512DFB;
+			remoteInfo = SeaFood;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E67C0E6E2DB5CE6300512DFB /* SeaFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeaFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67C0EA72DB601E200512DFB /* SeaFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeaFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E67C0E822DB5D39C00512DFB /* Exceptions for "SeaFood" folder in "SeaFood" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E67C0E6D2DB5CE6300512DFB /* SeaFood */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E67C0E702DB5CE6300512DFB /* SeaFood */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E67C0E822DB5D39C00512DFB /* Exceptions for "SeaFood" folder in "SeaFood" target */,
+			);
 			path = SeaFood;
+			sourceTree = "<group>";
+		};
+		E67C0EA82DB601E200512DFB /* SeaFoodTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SeaFoodTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E67C0E6B2DB5CE6300512DFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67C0EA42DB601E200512DFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				E67C0E702DB5CE6300512DFB /* SeaFood */,
+				E67C0EA82DB601E200512DFB /* SeaFoodTests */,
 				E67C0E6F2DB5CE6300512DFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				E67C0E6E2DB5CE6300512DFB /* SeaFood.app */,
+				E67C0EA72DB601E200512DFB /* SeaFoodTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +108,29 @@
 			productReference = E67C0E6E2DB5CE6300512DFB /* SeaFood.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E67C0EA62DB601E200512DFB /* SeaFoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E67C0EAD2DB601E200512DFB /* Build configuration list for PBXNativeTarget "SeaFoodTests" */;
+			buildPhases = (
+				E67C0EA32DB601E200512DFB /* Sources */,
+				E67C0EA42DB601E200512DFB /* Frameworks */,
+				E67C0EA52DB601E200512DFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E67C0EAC2DB601E200512DFB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E67C0EA82DB601E200512DFB /* SeaFoodTests */,
+			);
+			name = SeaFoodTests;
+			packageProductDependencies = (
+			);
+			productName = SeaFoodTests;
+			productReference = E67C0EA72DB601E200512DFB /* SeaFoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +143,10 @@
 				TargetAttributes = {
 					E67C0E6D2DB5CE6300512DFB = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					E67C0EA62DB601E200512DFB = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = E67C0E6D2DB5CE6300512DFB;
 					};
 				};
 			};
@@ -100,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				E67C0E6D2DB5CE6300512DFB /* SeaFood */,
+				E67C0EA62DB601E200512DFB /* SeaFoodTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E67C0E6C2DB5CE6300512DFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67C0EA52DB601E200512DFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E67C0EA32DB601E200512DFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E67C0EAC2DB601E200512DFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E67C0E6D2DB5CE6300512DFB /* SeaFood */;
+			targetProxy = E67C0EAB2DB601E200512DFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E67C0E772DB5CE6400512DFB /* Debug */ = {
@@ -251,13 +339,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6367ZH4ZBS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SeaFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,13 +369,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6367ZH4ZBS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SeaFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,6 +389,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E67C0EAE2DB601E200512DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6367ZH4ZBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gabriel.sabanai.SeaFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeaFood.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeaFood";
+			};
+			name = Debug;
+		};
+		E67C0EAF2DB601E200512DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6367ZH4ZBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gabriel.sabanai.SeaFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeaFood.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeaFood";
 			};
 			name = Release;
 		};
@@ -315,6 +445,15 @@
 			buildConfigurations = (
 				E67C0E7A2DB5CE6400512DFB /* Debug */,
 				E67C0E7B2DB5CE6400512DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E67C0EAD2DB601E200512DFB /* Build configuration list for PBXNativeTarget "SeaFoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67C0EAE2DB601E200512DFB /* Debug */,
+				E67C0EAF2DB601E200512DFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
